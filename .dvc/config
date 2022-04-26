@@ -1,0 +1,4 @@
+[core]
+    remote = storage
+['remote "storage"']
+    url = http://localhost:9001/local-bucket/dvcstore
