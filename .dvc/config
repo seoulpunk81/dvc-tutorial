@@ -1,4 +1,11 @@
 [core]
-    remote = storage
+    remote = minio
 ['remote "storage"']
     url = http://localhost:9001/local-bucket/dvcstore
+['remote "minio"']
+    url = s3://local-bucket
+    endpointurl = http://localhost:9000
+    access_key_id = minio
+    secret_access_key = minio123
+    use_ssl = false
+    ssl_verify = false
